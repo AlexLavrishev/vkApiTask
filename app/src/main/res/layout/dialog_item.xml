@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:id="@+id/ava"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:layout_height="75dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Имя Фамилия"
+            android:id="@+id/uName"
+            android:layout_alignTop="@+id/ava"
+            android:layout_toRightOf="@+id/ava"
+            android:layout_toEndOf="@+id/ava" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ownerMsg"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/uName"
+            android:layout_alignStart="@+id/uName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="текст сообщения"
+            android:id="@+id/lastMsg"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ownerMsg"
+            android:layout_toEndOf="@+id/ownerMsg" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:text="Дата"
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:layout_alignTop="@+id/uName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="13dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:text="uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ava"
+            android:layout_alignLeft="@+id/ownerMsg"
+            android:layout_alignStart="@+id/ownerMsg"
+            android:id="@+id/uid"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>
